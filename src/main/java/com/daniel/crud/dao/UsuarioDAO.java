@@ -24,7 +24,7 @@ public class UsuarioDAO {
             System.out.println("Usuario insertado correctamente");
 
         } catch (Exception e) {
-            System.out.println("❌ Error al insertar: " + e.getMessage());
+            System.out.println("Error al insertar: " + e.getMessage());
         }
     }
 
@@ -46,7 +46,7 @@ public class UsuarioDAO {
             }
 
         } catch (Exception e) {
-            System.out.println("❌ Error al listar: " + e.getMessage());
+            System.out.println("Error al listar: " + e.getMessage());
         }
 
         return lista;
@@ -72,7 +72,7 @@ public class UsuarioDAO {
             }
 
         } catch (Exception e) {
-            System.out.println("❌ Error al actualizar: " + e.getMessage());
+            System.out.println("Error al actualizar: " + e.getMessage());
         }
     }
 
@@ -94,7 +94,7 @@ public class UsuarioDAO {
             }
 
         } catch (Exception e) {
-            System.out.println("❌ Error al eliminar: " + e.getMessage());
+            System.out.println("Error al eliminar: " + e.getMessage());
         }
     }
 
@@ -118,7 +118,7 @@ public class UsuarioDAO {
             }
 
         } catch (Exception e) {
-            System.out.println("❌ Error al buscar: " + e.getMessage());
+            System.out.println("Error al buscar: " + e.getMessage());
         }
 
         return lista;
