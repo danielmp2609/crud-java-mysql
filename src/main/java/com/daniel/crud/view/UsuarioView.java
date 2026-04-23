@@ -67,7 +67,7 @@ public class UsuarioView extends JFrame {
 
         setLayout(new BorderLayout(15, 15));
 
-        // 🔷 PANEL FORMULARIO
+        
         JPanel panelForm = new JPanel(new GridLayout(3, 2));
         panelForm.setBorder(BorderFactory.createTitledBorder("Datos del Usuario"));
         ((JPanel) getContentPane()).setBorder(
@@ -97,7 +97,7 @@ public class UsuarioView extends JFrame {
 
         add(panelForm, BorderLayout.NORTH);
 
-        // 🔷 TABLA
+        
         modelo = new DefaultTableModel(new String[] { "ID", "Nombre", "Correo" }, 0);
         tabla = new JTable(modelo);
 
@@ -126,7 +126,7 @@ public class UsuarioView extends JFrame {
         });
         add(new JScrollPane(tabla), BorderLayout.CENTER);
 
-        // 🔷 BOTONES
+        
         JPanel panelBotones = new JPanel(new BorderLayout());
 
         JPanel left = new JPanel(new GridLayout(0, 1));
@@ -181,7 +181,7 @@ public class UsuarioView extends JFrame {
         
         add(panelBotones, BorderLayout.EAST);
 
-        // 🔥 EVENTOS
+        
         
         btnAgregar.addActionListener(e -> {
             if (!validarCampos())
